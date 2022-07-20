@@ -32,7 +32,7 @@ void keyPressed()
 //
 void mousePressed()
 {
-  if (  ) exit();
+  if ( mouseX>quitButtonX && mouseX<quitButtonX+quitButtonWidth && mouseY>quitButtonY && mouseY<quitButtonY+quitButtonHeight ) exit();
 }//End mousePressed
 //
 //End MAIN Program
