@@ -19,10 +19,14 @@ void setup()
 //
 void draw()
 {
+  //Hover-over
+  fill(buttonFill); //2-colours to start, remember that nightMode adds choice
   rect(quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
-  println("X-Value", quitButtonX, "\t", mouseX, "\t", quitButtonX+quitButtonWidth, "\t\t Look at the middle value");
-  println("Y-Value", quitButtonY, "\t", mouseY, "\t", quitButtonY+quitButtonHeight, "\t\t Look at the middle value");
+  fill(resetButtonColour);
   //
+  //Repeating CONSOLE values illustrating mouseX and mouseY related to a formula, mouse buttons
+  //println("X-Value", quitButtonX, "\t", mouseX, "\t", quitButtonX+quitButtonWidth, "\t\t Look at the middle value");
+  //println("Y-Value", quitButtonY, "\t", mouseY, "\t", quitButtonY+quitButtonHeight, "\t\t Look at the middle value");
 }//End draw
 //
 void keyPressed()
@@ -33,6 +37,7 @@ void keyPressed()
 void mousePressed()
 {
   if ( mouseX>quitButtonX && mouseX<quitButtonX+quitButtonWidth && mouseY>quitButtonY && mouseY<quitButtonY+quitButtonHeight ) exit();
+  //
 }//End mousePressed
 //
 //End MAIN Program
